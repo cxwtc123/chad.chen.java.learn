@@ -1,0 +1,14 @@
+<HostedService xmlns="http://schemas.microsoft.com/windowsazure"
+	xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Url>https://management.core.chinacloudapi.cn/8e6d097f-85d9-4338-80d3-4150ff9e5e70/services/hostedservices/cxwtc1-testa</Url>
+	<ServiceName>cxwtc1-testa</ServiceName>
+	<HostedServiceProperties>
+		<Description i:nil="true" />
+		<Location>China East</Location>
+		<Label>Y3h3dGMxLXRlc3Rh</Label>
+		<Status>Created</Status>
+		<DateCreated>2015-03-17T08:01:10Z</DateCreated>
+		<DateLastModified>2015-03-17T08:05:34Z</DateLastModified>
+		<ExtendedProperties />
+	</HostedServiceProperties>
+</HostedService>
