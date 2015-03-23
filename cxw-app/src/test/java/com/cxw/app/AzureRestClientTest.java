@@ -1,22 +1,30 @@
 package com.cxw.app;
 
+
+import java.util.Set;
+
 import org.junit.Test;
+
+import com.cxw.azure.client.AzureRestClient;
+import com.cxw.azure.client.Instance;
+
 
 public class AzureRestClientTest {
     
 
     @Test
-    public void testHttpGethostedservices() {
-        System.out.println("RestClientTest.testHttpGet()");
+    public void instanceTest() {
         AzureRestClient client = new AzureRestClient();
-        client.httpGet("services/hostedservices/cxwtc1-testa");
+        
+        Set<Instance> instances = client.instances();
+        
+        for (Instance instance : instances) {
+            System.out.println(instance);
+        }
+         
+
     }
     
-    @Test
-    public void testHttpGetcloudserviceavailable() {
-        System.out.println("RestClientTest.testHttpGet()");
-        AzureRestClient client = new AzureRestClient();
-        client.httpGet("services/hostedservices/operations/isavailable/cxwtc1-testa");
-    }
+
 
 }

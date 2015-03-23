@@ -18,10 +18,10 @@ public class SimpleRestClientTest {
     @Test
     public void testHttpGet() {
         
-        SimpleRestClient client = new SimpleRestClient("http://localhost:9200");
+        SimpleRestClient client = new SimpleRestClient("http://www.baidu.com");
         
         
-        Response response = client.httpGet("/_nodes");
+        Response response = client.httpGet("");
  
         System.out.println(response.readEntity(String.class));
         
