@@ -15,7 +15,7 @@ public class ConfigurationUtil {
 	private String publishFileName = "E:\\svn\\Docs\\TestCount\\azure-account\\chad-credentials.publishsettings";
 	
 //	private String certificateProfileName = "windowsazureremoteaccess";
-	private String certificatePath = "E:\\svn\\Docs\\TestCount\\azure-account\\Certificate\\AzureCertificateForChad2014-12-26.pfx";
+	private String certificatePath = "cxwtc12015-3-18.pfx";
 	
 	private String certificatePassword = "123456";
 	
