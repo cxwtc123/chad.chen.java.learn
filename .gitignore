@@ -28,6 +28,16 @@ local.properties
 # PDT-specific
 .buildpath
 
+# target
+classes/
+surefire-reports/
+surefire/
+generated-sources/
+generated-test-sources/
+maven-archiver/
+test-classes/
+
+
 
 #################
 ## Visual Studio
