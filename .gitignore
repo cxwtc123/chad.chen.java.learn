@@ -4,6 +4,7 @@
 
 *.pydevproject
 .metadata
+.recommenders
 bin/
 tmp/
 *.tmp
@@ -224,3 +225,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+*.zip
