@@ -1,10 +1,15 @@
 package com.cxw.test.policy;
 
+import javax.naming.NameNotFoundException;
+
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import com.jayway.restassured.RestAssured;
+
 import static com.jayway.restassured.RestAssured.*;
 import static com.jayway.restassured.matcher.RestAssuredMatchers.*;
 import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
@@ -28,5 +33,15 @@ public class TestPolicyGet {
 		expect().statusCode(200).get("serverStatus")
 		.then().assertThat()
 		.body("serviceName", equalTo("policy service"));
+	}
+	
+	@Rule public ExpectedException exception = ExpectedException.none();
+
+	@Test
+	public void example3() throws NameNotFoundException {
+	    exception.expect(NameNotFoundException.class);
+	    exception.expectMessage(containsString("exception message"));
+	 
+	    throw new NameNotFoundException();
 	}
 }

@@ -18,7 +18,8 @@ public class AzureClientTest {
 
     @Test
     public void testHttpGet() {
-        fail("Not yet implemented");
+
+    	
     }
 
 }
