@@ -54,7 +54,9 @@ public class Person {
 		return age;
 	}
 
-	public void setAge(Integer age) {
+	public void setAge(
+			@NotNull
+			Integer age ) {
 		this.age = age;
 	}
 
