@@ -28,13 +28,13 @@ public class TestValidateFamiliy {
 	public void test() {
 		
 		Person person = new Person();
-		person.setId("1239012345678");
-		person.setAge(201);
+		person.setId("123456789012345678");
+		person.setAge(81);
 		person.setCallNo("13888888888");
 		person.setName("Chad Chen");
 		person.setAddr("somewhere");
-		person.setEmail("chadabc.com");
-		person.setSex("madle");
+		person.setEmail("chad@abc.com");
+		person.setSex("male");
 
 		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
 		Validator validator = factory.getValidator();
