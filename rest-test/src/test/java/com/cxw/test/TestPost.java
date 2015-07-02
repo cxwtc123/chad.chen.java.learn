@@ -1,4 +1,4 @@
-package com.cxw.test.policy;
+package com.cxw.test;
 
 import static org.junit.Assert.*;
 

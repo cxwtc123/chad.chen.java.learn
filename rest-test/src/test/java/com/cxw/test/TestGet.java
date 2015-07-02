@@ -1,4 +1,4 @@
-package com.cxw.test.policy;
+package com.cxw.test;
 
 import javax.naming.NameNotFoundException;
 
@@ -30,18 +30,18 @@ public class TestGet {
 
 	@Test
 	public void testServerStatus() {
-		expect().statusCode(200).get("serverStatus")
-		.then().assertThat()
-		.body("serviceName", equalTo("policy service"));
+		expect().statusCode(200).get("_status").then().assertThat()
+				.body("serviceName", equalTo("service"));
 	}
-	
-	@Rule public ExpectedException exception = ExpectedException.none();
+
+	@Rule
+	public ExpectedException exception = ExpectedException.none();
 
 	@Test
 	public void example3() throws NameNotFoundException {
-	    exception.expect(NameNotFoundException.class);
-	    exception.expectMessage(containsString("exception message"));
-	 
-	    throw new NameNotFoundException();
+		exception.expect(NameNotFoundException.class);
+		exception.expectMessage(containsString("exception message"));
+
+		throw new NameNotFoundException();
 	}
 }
