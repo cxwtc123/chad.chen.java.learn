@@ -15,12 +15,12 @@ import static com.jayway.restassured.matcher.RestAssuredMatchers.*;
 import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
 import static org.hamcrest.Matchers.*;
 
-public class TestPolicyGet {
+public class TestGet {
 
 	@Before
 	public void setUp() throws Exception {
 		RestAssured.baseURI = "http://localhost:8080";
-		RestAssured.basePath = "/policy/";
+		RestAssured.basePath = "/test/";
 	}
 
 	@After

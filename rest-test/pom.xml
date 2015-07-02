@@ -29,20 +29,15 @@
 			<groupId>com.jayway.restassured</groupId>
 			<artifactId>xml-path</artifactId>
 			<version>2.4.0</version>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>com.jayway.restassured</groupId>
 			<artifactId>json-schema-validator</artifactId>
 			<version>2.4.0</version>
-		</dependency>
-
-<!-- 		<dependency>
-			<groupId>com.jayway.restassured</groupId>
-			<artifactId>spring-mock-mvc</artifactId>
-			<version>2.4.0</version>
 			<scope>test</scope>
-		</dependency> -->
+		</dependency>
 
 		<dependency>
 			<groupId>com.jayway.restassured</groupId>
@@ -50,6 +45,15 @@
 			<version>2.4.0</version>
 			<scope>test</scope>
 		</dependency>
+		
+<!-- 		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>spring-mock-mvc</artifactId>
+			<version>2.4.0</version>
+			<scope>test</scope>
+		</dependency> -->
+
+
 	</dependencies>
 
 	<build>

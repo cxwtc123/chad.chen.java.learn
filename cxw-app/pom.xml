@@ -48,8 +48,8 @@
 	<build>
 		<defaultGoal>compile</defaultGoal>
 
-		<finalName>policy</finalName>
-		<sourceDirectory>src/main/java</sourceDirectory>
+		<finalName>cxw-app</finalName>
+		<sourceDirectory>src/main/java,src/main/jaxb</sourceDirectory>
 		<testSourceDirectory>src/test/java</testSourceDirectory>
 
 		<plugins>
@@ -83,7 +83,7 @@
 					<!-- The package in which the source files will be generated. -->
 					<packageName>com.cxw.tool.xml</packageName>
 					<!-- The working directory to create the generated java source files. -->
-					<outputDirectory>src/main/java</outputDirectory>
+					<outputDirectory>src/main/jaxb</outputDirectory>
 				</configuration>
 			</plugin>
 		</plugins>

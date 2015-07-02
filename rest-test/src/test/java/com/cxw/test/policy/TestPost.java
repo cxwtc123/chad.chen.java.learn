@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestPolicyPost {
+public class TestPost {
 
 	@Before
 	public void setUp() throws Exception {
